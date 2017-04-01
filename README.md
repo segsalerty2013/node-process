@@ -5,7 +5,7 @@ Milti threading/tasking and background task helper module for nodejs.
 
 ### Description
 Read about the use and motivation behing this here: 
-[https://github.com/segsalerty2013/node-process](https://github.com/segsalerty2013/node-process)
+[https://github.com/segsalerty2013/node-process/wiki](https://github.com/segsalerty2013/node-process/wiki)
 
 ### Installation
 
