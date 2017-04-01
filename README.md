@@ -3,7 +3,7 @@ Milti threading/tasking and background task helper module for nodejs.
 
 ### Description
 Read about the use and motivation behing this here: 
-[https://dev.infobip.com/](https://dev.infobip.com/)
+[https://github.com/segsalerty2013/node-process](https://github.com/segsalerty2013/node-process)
 
 ### Installation
 
@@ -28,10 +28,12 @@ node_process.fork('path_to_valid_module', ['array of arg required by module'], t
 });
 
 //for a sticky process/thread that never ends until main thread is dead
-node_process.fork('path_to_valid_module', ['array of arg required by module'], true)
+node_process.fork('path_to_valid_module', ['array of arg required by module'], false)
 .then((response)=>{
     //response is string|object sent from the module back to the main thread
-    //such response will be sent with process.send('string|object');
+    //such response will be sent with process.send('string|object', 'Handler' ()=>{}, {keepOpen:true});
+    //note the Handler i.e Empty ()=>{}
+    //and the {keepOpen:true} options
     console.log(response);
 })
 .catch((error)=>{
