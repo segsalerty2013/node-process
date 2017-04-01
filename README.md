@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/segsalerty2013/node-process.svg?branch=master)](https://travis-ci.org/segsalerty2013/node-process)
+
 # Node Process
 Milti threading/tasking and background task helper module for nodejs.
 
