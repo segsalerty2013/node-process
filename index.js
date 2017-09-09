@@ -2,6 +2,12 @@ const child_process = require('child_process');
 const path = require('path');
 const fs = require('fs');
 
+if(typeof Promise != 'function'){
+    var Promise = require('promise-polyfill');
+    var setAsap = require('setasap');
+    Promise._immediateFn = setAsap;
+}
+
 var Thread = function(){
 
 };
